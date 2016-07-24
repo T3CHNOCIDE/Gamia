@@ -18,9 +18,9 @@ def pull_listed_wikis(site, username, password):
 	print "%s images to complete!" % len(allpages)
 	i = 1
 	
-	for file in allpages[29320:]:
+	for file in allpages:
 	
-		print "[%s/%s]" % (i, len(allpages) - 29320)
+		print "[%s/%s]" % (i, len(allpages))
 	
 		try:
 			file_page = wikiapi.view(file)
