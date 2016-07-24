@@ -3,7 +3,7 @@ import wikiapi
 import requests
 import regex as re
 
-def pull_listed_wikis(site, username, password):
+def check_images(site, username, password):
 	"""
 	Pulls all listed wikis from the interlanguage map page 
 	in order to update each international page number
@@ -106,4 +106,4 @@ def pull_listed_wikis(site, username, password):
 		
 if __name__ == "__main__":
 	
-	pull_listed_wikis("WIKI", "USERNAME", "PASSWORD")
+	check_images("WIKI", "USERNAME", "PASSWORD")
